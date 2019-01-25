@@ -1,0 +1,35 @@
+@import '~bulma/bulma.sass';
+@import 'loader';
+
+.center {
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+#poor {
+  display: none;
+}
+
+.earn {
+  color: red;
+}
+.column {
+  padding: 1rem;
+}
+
+select, .select {
+  width: 100%;
+}
+
+#body-container {
+  display: none;
+}
