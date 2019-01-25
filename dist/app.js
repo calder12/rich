@@ -2005,7 +2005,7 @@ var num = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0,
   useGrouping: true
 });
-var loc = window.location.hostname;
+var loc = window.location.href;
 console.log(loc);
 axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('//' + loc + '/data.php').then(function (_ref) {
   var data = _ref.data;

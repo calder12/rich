@@ -12,7 +12,7 @@ const num = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0,
   useGrouping: true
 })
-const loc = window.location.hostname 
+const loc = window.location.href
 console.log(loc)
 axios.get('//' + loc + '/data.php')
   .then(({data}) => {
