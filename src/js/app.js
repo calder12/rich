@@ -13,7 +13,7 @@ const num = new Intl.NumberFormat('en-US', {
   useGrouping: true
 })
 
-axios.get('https://labs.calder.io/forbes/data.php')
+axios.get('/data.php')
   .then(({data}) => {
 
     // Sort the full list in order of Net Worth

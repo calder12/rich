@@ -2005,7 +2005,7 @@ var num = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0,
   useGrouping: true
 });
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('https://labs.calder.io/forbes/data.php').then(function (_ref) {
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/data.php').then(function (_ref) {
   var data = _ref.data;
   // Sort the full list in order of Net Worth
   data.sort(compare); // Grab only the top 100 billionaires
