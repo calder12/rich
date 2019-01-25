@@ -12,8 +12,9 @@ const num = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0,
   useGrouping: true
 })
-
-axios.get('/data.php')
+const loc = window.location.hostname 
+console.log(loc)
+axios.get('//' + loc + '/data.php')
   .then(({data}) => {
 
     // Sort the full list in order of Net Worth
