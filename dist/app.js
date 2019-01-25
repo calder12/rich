@@ -2007,7 +2007,7 @@ var num = new Intl.NumberFormat('en-US', {
 });
 var loc = window.location.href;
 console.log(loc);
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('//' + loc + '/data.php').then(function (_ref) {
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(loc + '/data.php').then(function (_ref) {
   var data = _ref.data;
   // Sort the full list in order of Net Worth
   data.sort(compare); // Grab only the top 100 billionaires

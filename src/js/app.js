@@ -14,7 +14,7 @@ const num = new Intl.NumberFormat('en-US', {
 })
 const loc = window.location.href
 console.log(loc)
-axios.get('//' + loc + '/data.php')
+axios.get(loc + '/data.php')
   .then(({data}) => {
 
     // Sort the full list in order of Net Worth
