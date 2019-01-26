@@ -2006,8 +2006,7 @@ var num = new Intl.NumberFormat('en-US', {
   useGrouping: true
 });
 var loc = window.location.href;
-console.log(loc);
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(loc + '/data.php').then(function (_ref) {
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(loc + '/dist/data/forbes.json').then(function (_ref) {
   var data = _ref.data;
   // Sort the full list in order of Net Worth
   data.sort(compare); // Grab only the top 100 billionaires
@@ -2050,7 +2049,7 @@ axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(loc + '/data.php').then(functio
     if (yearly === '') return;
     var currency = document.getElementById('currency');
     var cur = currency.options[currency.selectedIndex].value;
-    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('https://api.exchangeratesapi.io/latest?base=USD&symbols=CAD,USD,GBP,AUD,EUR').then(function (_ref3) {
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(loc + '/dist/data/currency.json').then(function (_ref3) {
       var data = _ref3.data;
       var rate = Object.entries(data.rates).filter(function (entry) {
         return entry[0] === cur;

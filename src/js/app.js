@@ -13,8 +13,7 @@ const num = new Intl.NumberFormat('en-US', {
   useGrouping: true
 })
 const loc = window.location.href
-console.log(loc)
-axios.get(loc + '/data.php')
+axios.get(loc + '/dist/data/forbes.json')
   .then(({data}) => {
 
     // Sort the full list in order of Net Worth
@@ -65,7 +64,7 @@ axios.get(loc + '/data.php')
       const currency = document.getElementById('currency')
       const cur = currency.options[currency.selectedIndex].value
 
-      axios.get('https://api.exchangeratesapi.io/latest?base=USD&symbols=CAD,USD,GBP,AUD,EUR')
+      axios.get(loc + '/dist/data/currency.json')
       .then(({data}) => {
         const rate = Object.entries(data.rates)
           .filter((entry) =>{
