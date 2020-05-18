@@ -7,11 +7,13 @@ const formatter = new Intl.NumberFormat('en-US', {
   currency: 'USD',
   minimumFractionDigits: 2
 })
+
 const num = new Intl.NumberFormat('en-US', {
   style: 'decimal',
   maximumFractionDigits: 0,
   useGrouping: true
 })
+
 const loc = window.location.href
 axios.get(loc + '/dist/data/forbes.json')
   .then(({data}) => {
