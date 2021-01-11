@@ -3,7 +3,8 @@
   // Get the Forbes List
 
   $year = date("Y");
-  $uri = 'https://www.forbes.com/ajax/list/data?year=' . $year . '&uri=billionaires&type=person';
+  // $uri = 'https://www.forbes.com/ajax/list/data?year=' . $year . '&uri=billionaires&type=person';
+  $uri = 'https://www.forbes.com/ajax/list/data?year=2021&uri=billionaires&type=person';
   $context = stream_context_create(
     array(
       'http' => array(
